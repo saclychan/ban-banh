@@ -1,6 +1,6 @@
-<pre style="background:#053; color:#fff">
+﻿<pre style="background:#053; color:#fff">
 <? 
-echo "N?i dung bi?n \$_REQUEST:<br>";
+echo "Nội dung biến \$_REQUEST:<br>";
 print_r($_REQUEST); ?>
 </pre>
 
