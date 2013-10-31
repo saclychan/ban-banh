@@ -79,7 +79,13 @@
 				<span class="name-product" onclick="location.href='index.php?go=product_detail&pid=<? echo $rowpro['ProID']; ?>'" title="Chi tiết sản phẩm <? echo $rowpro['ProName'];?>"><? echo $rowpro['ProName'];?></span><br />
 				<span class="price-product">Giá: <strong><? echo number_format($rowpro['ProPrice']); ?></strong> (VND)</span>
 				<div class="buy-detail">
-					<a class="buy-button" href="index.php?go=shoppingcart&action=add&pid=<? echo $rowpro['ProID']; ?>"></a>
+					<form class="form-mua-hang" method="get" action="index.php">
+						<input type="hidden" name="action" value="add">
+						<input type="hidden" name="pid" value="<? echo $rowpro['ProID']; ?>">
+						<input type="text" size="4" name="soluong" value="1">
+						<input type="hidden" name="go" value="shoppingcart">
+						<input type="submit" value="Đặt hàng">
+					</form>
 					<a class="detail-button" href="index.php?go=product_detail&pid=<? echo $rowpro['ProID']; ?>"></a>
 				</div>
 			</div>
