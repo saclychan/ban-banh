@@ -4,16 +4,17 @@
 	switch($action)
 	{
 		case "add": //Thêm một sản phẩm vào giỏ hàng
-				$pid = $_REQUEST["pid"];//lấy mã sp từ url	
+				$pid = $_REQUEST["pid"];//lấy mã sp từ url
+				$soluong= $_REQUEST["soluong"];
 				if($cart){
 					if(array_key_exists($pid,$cart))
 					{
-						$cart[$pid] +=1;
+						$cart[$pid] += $soluong;
 					}else{
-						$cart[$pid]=1;
+						$cart[$pid] = $soluong;
 					}
 				}else{
-					$cart[$pid]=1;
+					$cart[$pid] = $soluong;
 				}
 				$_SESSION["CART"] = $cart;
 				Redirect('index.php?go=shoppingcart');
