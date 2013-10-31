@@ -1,0 +1,35 @@
+/* CSS Document */
+
+@font-face {
+	font-family: "My Custom Font1";
+	src: url(starstrp.ttf) format("truetype");
+}
+@font-face {
+	font-family: "My Custom Font2";
+	src: url(UVNBanhMi.TTF) format("truetype");
+}
+@font-face {
+	font-family: "My Custom Font3";
+	src: url(UVNBayBuom_R.TTF) format("truetype");
+}
+@font-face {
+	font-family: "My Custom Font4";
+	src: url(UVNMoiHong.TTF) format("truetype");
+}
+
+.span1{
+	font-size:36px;
+	font-family: "My Custom Font1", Verdana, Tahoma; 
+}
+.span2{
+	font-size:36px;
+	font-family: "My Custom Font2", Verdana, Tahoma; 
+}
+.span3{
+	font-size:36px;
+	font-family: "My Custom Fon3", Verdana, Tahoma; 
+}
+.span4{
+	font-size:36px;
+	font-family: "My Custom Font4", Verdana, Tahoma; 
+}

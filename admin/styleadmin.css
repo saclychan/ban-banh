@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, font, img, small, strike, strong, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%;
+	vertical-align:baseline;
+	background: transparent;
+}
+
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:75%;
+	line-height: 1.5em;
+	background: url(images/bgpage.png) repeat;
+	position: relative;
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+a img{
+	border: none;
+}
+
+
+#page{
+	width: 1030px;
+	margin: 0 auto;  /*Can chinh toan trang nam giua*/
+}
+
+
+
+/*END RESET*/
+/*HEADER*/
+#header{
+	height:210px;
+	width: 1030px;
+	background: url(images/header.png) no-repeat;
+	}
+#header #loginadmin{
+	height:56px;
+	width:330px;
+	margin:5px 698px;
+	position:absolute;
+}
+#loginadmin ul li{
+	float:left;
+	margin: 0px 5px;
+}
+#loginadmin  a{
+	color: #FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+}
+#loginadmin a:hover{
+	color: #E20563;
+}
+#loginadmin a#quanlyuser{
+	color:#000000;
+}
+#loginadmin a#quanlyuser:hover{
+	color:#E20563;
+}
+
+#menuicon{
+	height:30px;
+	width:780px;
+	margin: 80px 290px;
+	border: 0px;
+	float:left;
+}
+#menuicon ul{
+	float:left;
+	list-style:none;
+}
+#menuicon ul li{
+	float:left;
+	cursor:pointer;
+	position:relative;
+	display:block;
+	height:30px;
+	width:90px;
+}
+
+#menuicon ul li#trangchu{
+	margin-left: 25px;
+}
+#menuicon ul li#qlbanh{
+	margin-left:22px;
+}
+#menuicon ul li#hoadon{
+	margin-left:18px;
+}
+#menuicon ul li#khachhang{
+	margin-left:20px;
+}
+#menuicon ul li#tintuc{
+	margin-left:30px;
+}
+#menuicon ul li#ykien{
+	margin-left:14px;
+}
+#menuicon ul li#meovat{
+	margin-left:5px;
+}
+#menuicon ul li a{
+	display:block;
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+	padding: .3em 6px;
+}
+#menuicon ul li ul li{
+	background: #FF53B1;
+	margin:2px 0px;
+	z-index:1000;
+}
+#menuicon ul li ul li:hover{
+	background: #F479D6;
+}
+#menuicon li a:hover{
+	color:#FFFFFF;
+}
+#menuicon li ul{
+	position:absolute;
+	display:none;
+	width:18em;
+}
+#menuicon li:hover ul{
+	display:block;
+}
+#menuicon ul li ul li{
+	width:100%;
+	clear:both;
+}
+#menuicon ul li ul li a{
+	color:#FFFFFF;
+}
+#menuicon ul li ul li a:hover{
+	color:#FFFF00;
+}
+
+/*MAIN*/
+#main{
+	width:1030px;
+	background:url(images/bgmainadmin.png) repeat-y;
+}
+#main #content{
+	width: 930px;
+	margin: 0px 40px;
+}
+
+/*FOOTER*/
+#footer{
+	width:1030px;
+	height:120px;
+	background:url(images/footeradmin.png) no-repeat;
+	}
+
+
+/*STYLE cho cac Content*/
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF0066;
+}
+.style2 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style3{
+	font-size: 13px; 
+	font-weight: bold; 
+}
+.st1{
+	color:#FF3399;
+	font-weight:bold;
+}
+.over{ background: #CCCCCC;}
+.out{ background:#FFFFFF;}
+
+#contentcart{
+	width: 900px;
+	margin:0 auto;
+	border: 1px solid threedshadow;
+    -moz-border-radius: 7px 7px 7px 7px;
+}
+
+.borderyes{  /*Tao border cho anh*/
+	height:200px;
+	width:200px;
+	border: 1px solid threedshadow;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+.table1{
+	width:80%;
+	margin:0 auto;
+	border: 1px solid threedshadow;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+.table2{
+	border: 1px solid threedshadow;
+    -moz-border-radius: 0px 0px 10px 10px;
+}
+.table2-box{
+	border: solid 1px #999999;
+	width:430px;
+	margin:0 auto;
+}
+.table2-box-head{
+	width:430px;
+	height:30px;
+	background:#A6E4EC;
+}
+.table2-box-content{
+	width:430px;
+}
+.table2-box-func{
+	width:430px;
+}
+.table3{
+	border: 1px solid threedshadow;
+    -moz-border-radius: 0px 10px 10px 10px;
+}
+.tdtotal{
+	height:20px;
+	background: #CCCCCC;
+	-moz-border-radius: 5px 5px 5px 5px;
+}
+.border1{
+	width:100%;
+	height:100%;
+	background: #D8D8D8;
+	-moz-border-radius: 5px 5px 5px 5px;
+}
+.tableboxtextarea{
+	border: 1px solid threedshadow;
+    -moz-border-radius: 5px 5px 5px 5px;
+	border-color: #A3A3A3;
+}
+.tableboxinput{
+	height:20px;
+	border: 1px solid threedshadow;
+	-moz-border-radius:5px 5px 5px 5px;
+	border-color: #A3A3A3;
+}
