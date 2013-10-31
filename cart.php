@@ -1,19 +1,31 @@
+<div style="margin: 1px; background:#053; color:#fff;">
+cart.php:
+<pre style="font-family:Arial">
+<? 
+echo "Nội dung biến \$_REQUEST:<br>";
+print_r($_REQUEST);
+echo "<br> Nội dung biến \$_SESSION:<br>";
+print_r($_SESSION);
+?>
+</pre>
+</div>
 <?
 	$cart = $_SESSION["CART"];
 	$action = $_REQUEST["action"];
 	switch($action)
 	{
 		case "add": //Thêm một sản phẩm vào giỏ hàng
-				$pid = $_REQUEST["pid"];//lấy mã sp từ url	
+				$pid = $_REQUEST["pid"];//lấy mã sp từ url
+				$soluong= $_REQUEST["soluong"];
 				if($cart){
 					if(array_key_exists($pid,$cart))
 					{
-						$cart[$pid] +=1;
+						$cart[$pid] += $soluong;
 					}else{
-						$cart[$pid]=1;
+						$cart[$pid] = $soluong;
 					}
 				}else{
-					$cart[$pid]=1;
+					$cart[$pid] = $soluong;
 				}
 				$_SESSION["CART"] = $cart;
 				Redirect('index.php?go=shoppingcart');
