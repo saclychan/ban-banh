@@ -1,11 +1,17 @@
-﻿<pre style="background:#053; color:#fff">
+﻿<div style="margin: 1px; background:#053; color:#fff;">
+content.php:
+<pre style="font-family:Arial">
 <? 
 echo "Nội dung biến \$_REQUEST:<br>";
-print_r($_REQUEST); ?>
+print_r($_REQUEST);
+echo "<br> Nội dung biến \$_SESSION:<br>";
+print_r($_SESSION);
+?>
 </pre>
-
+</div>
 <?
-	$go=$_REQUEST['go'];
+	if(!isset($_REQUEST['go'])) $_REQUEST['go'] = NULL;
+	$go = $_REQUEST['go'];
 	switch($go)
 	{
 		//case regiter
