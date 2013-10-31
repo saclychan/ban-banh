@@ -25,7 +25,15 @@
 			echo("Hết hàng");
 			}
 		?><br /><br />
-   	<div class="muahang"><a href="index.php?go=shoppingcart&action=add&pid=<? echo $row['ProID']; ?>"></a></div>
+	<form id="form-mua-hang" method="get" action="index.php">
+		
+		<input type="hidden" name="action" value="add">
+		<input type="hidden" name="pid" value="<? echo $row['ProID']; ?>">
+		<input type="text" size="4" name="soluong" value="1">
+		<input type="hidden" name="go" value="shoppingcart">
+		<input type="submit" value="Đặt hàng">
+	</form>
+	<? /*<div class="muahang"><a href="index.php?go=shoppingcart&action=add&pid=<? echo $row['ProID']; ?>"></a></div> */ ?>	
 	</td>
   </tr>
   
