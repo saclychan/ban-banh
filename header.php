@@ -1,5 +1,5 @@
 ﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!--- test comment -->
+
 <link type="text/css" href="css/style.css" />
 
 				<div id="logo">
