@@ -1,14 +1,3 @@
-<div style="margin: 1px; background:#053; color:#fff;">
-cart.php:
-<pre style="font-family:Arial">
-<? 
-echo "Nội dung biến \$_REQUEST:<br>";
-print_r($_REQUEST);
-echo "<br> Nội dung biến \$_SESSION:<br>";
-print_r($_SESSION);
-?>
-</pre>
-</div>
 <?
 	$cart = $_SESSION["CART"];
 	$action = $_REQUEST["action"];
