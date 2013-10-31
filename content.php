@@ -1,3 +1,9 @@
+<pre style="background:#053; color:#fff">
+<? 
+echo "N?i dung bi?n \$_REQUEST:<br>";
+print_r($_REQUEST); ?>
+</pre>
+
 <?
 	$go=$_REQUEST['go'];
 	switch($go)
