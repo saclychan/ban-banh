@@ -34,7 +34,7 @@
 	</div>
 	<div id="logoaptech">
 	</div>
-	<div id="copyright" align="right">Copy right © 2011 Bakery's Shop </div>
+	<div id="copyright" align="right">Copy right © 2013 Bakery's Shop </div>
 </div>
 
 <div id="noname"></div>
