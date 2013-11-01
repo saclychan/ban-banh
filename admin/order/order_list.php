@@ -136,14 +136,15 @@
 			?>
       </select>      </td>
       <td width="5%" align="center">
-	  		<?
-				if($row_order['OrdStatus']==1)
+	  		<!--?
+				if($row_order['OrdStatus']==1) // update chức năng xóa đơn hàng
 				{
-			?>
+			?-->
+			
 	  	<a href='admin.php?go=order_list&ostatus=<? echo $ostatus; ?>&action=delete&orderid=<? echo($row_order['OrdID']);?>' onClick="if(confirm('Bạn thực sự muốn xóa hóa đơn này?')) return true; else return false;">Xóa</a>
-			<?
+			<!--?
 				}else echo("|||");
-			?>		</td>
+			?-->		</td>
     </tr>
 	<tr>
 		<td colspan="7"><hr color="#999999" size="2" /></td>

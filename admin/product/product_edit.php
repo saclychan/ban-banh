@@ -169,7 +169,7 @@
 	 	   		<td><div align="center"><strong>Ảnh sản phẩm cũ </strong></div></td>
 	 		</tr>
 		 	<tr>
-				<td bgcolor="#68EEF9" width="200" height="200" ><img src="../pic-product/<? echo $row['ProImage'] ?>" height="200" width="200" /></td>
+				<td bgcolor="#FFFFFF" width="200" height="200" ><img src="../pic-product/<? echo $row['ProImage'] ?>" height="200" width="200" /></td>
 			</tr>
 		</table>
 		<br />	
@@ -178,7 +178,7 @@
 	 	   		<td><div align="center"><strong>Ảnh sản phẩm mới </strong></div></td>
 	 		</tr>
 		 	<tr>
-				<td bgcolor="#68EEF9" width="200" height="200" ><img width="200" height="200" name="ProImageid" id="ProImageid" src="../pic-product/<?=$anh?>" alt=""/></td>
+				<td bgcolor="#eeeeee" width="200" height="200" ><img width="200" height="200" name="ProImageid" id="ProImageid" src="../pic-product/<?=$anh?>" alt=""/></td>
 			</tr>
 		</table></td>
   </tr>

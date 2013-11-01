@@ -15,8 +15,8 @@
     <td colspan="4" align="right"><p class="style1" align="center">CHI TIẾT SẢN PHẨM </p></td>
   </tr>
   <tr>
-    <td width="25%" align="right" valign="top"><span class="style3">Tên sản phẩm: </span></td>
-    <td colspan="2" align="left"><div class="border1">
+    <td width="25%" align="right" valign="top"><span class="style3">Tên sản phẩm: </span></td>
+    <td colspan="2" align="left"><div>
 		<? echo($row['ProName']);?>	</div></td>
     <td width="35%" align="center"><span class="style3">Ảnh sản phẩm:</span></td>
   </tr>
@@ -38,7 +38,7 @@
   </tr>
   <tr>
     <td width="25%" height="100" align="right" valign="top"><span class="style3">Thông tin: </span></td>
-    <td colspan="2" align="left" valign="top" bgcolor="#00FFCC">
+    <td colspan="2" align="left" valign="top" bgcolor="#ffffff">
 		<? echo($row['ProDesc']);?>	</td>
   </tr>
   <tr>

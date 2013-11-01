@@ -14,8 +14,10 @@
 		
 
 		
-	$sql="INSERT INTO comment (CusID, ProID, DateSend, Content) VALUES ('".$CusID."','".$ProID."',NOW(),'".$Content."')";
+	$sql="INSERT INTO comment (CusID, ProID, DateSend, Content) VALUES ('".$_SESSION['CusID']."','".$ProID."',NOW(),'".$Content."')";
 		$res = mysql_query($sql,$cnn);
 		echo("<script>window.location='index.php?go=product_detail&pid=$ProID  ';</script>");
+		
+		//'".$CusID."'
 
 ?>
