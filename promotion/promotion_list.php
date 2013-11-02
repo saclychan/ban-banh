@@ -6,6 +6,9 @@
 	$sqlPromotion="SELECT * FROM promotion WHERE PromoStatus = 1 order by PromoID desc";
 	$ResultPromotion=mysql_query($sqlPromotion,$cnn);
 	$totalpage =ceil( mysql_num_rows($ResultPromotion) / $record_per_page);
+	if($totalpage==0){
+	$totalpage = 1;
+	}
 	if(!$pagenum || $pagenum <=0 || $pagenum > $totalpage){
 		$pagenum = 1;
 	} 
@@ -21,7 +24,7 @@
 
 <div class="defaul-new-content">
 	<div class="title-account"><span>Tin khuyến mãi</span></div>
-	<div class="content-defaul-new-product">
+	<div class="content-defaul-new-product-prom">
 		<br />
 		<table width="98%" border="0" align="center" cellpadding="5" cellspacing="0">
 					<?
@@ -52,21 +55,29 @@
 		    </table>
 			</a>
 			</td>
-		  </tr>
-		  <?
+		  </tr> 
+		  <? 
 		  }
 		  ?>
 		  <tr>
-			<td colspan="2" align="center" style="font-weight:bold">
+			<td colspan="2" align="center" style="font-weight:bold; color: black">
 							<?
 								/*
 								Vong lap de tao ra cac link lien ket den cac trang du lieu.
-								Output: 	1 | 2 | 3 | 4 
+								Output: 	<< < 1 | 2 | 3 | 4 > >> 
 								*/
+								$nghiemtuc = $pagenum - 1;
+								$khongnghiemtuc = $pagenum - 1 + 2*1;
+								echo "<a href='".$page."&page=" . 1 . "'> << </a>";
+								
+							
+								echo " <a href='".$page."&page=".$nghiemtuc."'><font color=black> < </a>";
+								
 								for($i =1; $i<=$totalpage;$i++)
 								{
+									
 									if ($i==1){
-										echo "<a href='".$page."&page=".$i."' >".$i."</a>"	;	
+										echo "<a href='".$page."&page=".$i."' ><font color=black>".$i."</a>"	;	
 									}else{
 									if($pagenum==$i)			
 										echo " | <a href='".$page."&page=".$i."'><B><font color=red><u>".$i."</u></font></B></a>";
@@ -74,7 +85,10 @@
 										echo " | <a href='".$page."&page=".$i."'>".$i."</a>";
 									}
 								}
-								echo("<font color=red>  &nbsp; &nbsp;(Page: &nbsp; ".$pagenum."&nbsp;/&nbsp;".$totalpage.")");
+								echo("<font color=black>  &nbsp; &nbsp;(Page: &nbsp; ".$pagenum."&nbsp;/&nbsp;".$totalpage.")");
+								
+								echo "<a href='".$page."&page=".$khongnghiemtuc ."'><font color=black> > </a>";
+								echo "<a href='".$page."&page=" . $totalpage . "'> >> </a>";
 							?>	</td>
 		  </tr>
 		</table><br /><br /><br />

@@ -4,18 +4,24 @@
 	$action=$_REQUEST['action'];
 	$CusID=$_REQUEST['cid'];
 	if($action=='detail')
-		$sql=mysql_query("select * from customer where CusID = " . $CusID . "",$cnn);
+		$sql=mysql_query("select CusName,CusAdd,CusPhone,CusEmail,CusGender,RegDate,TotalPurchase,CusUser,CusStatus,CusImage from customer where CusID = " . $CusID ,$cnn);
 ?>
 <?
 	while($rowCus=mysql_fetch_array($sql)){
 ?>
 
 
-<table width="100%" border="0" cellpadding="8" cellspacing="0">
-  <tr>
-    <td colspan="3" align="right"><p class="style1" align="center">CHI TIẾT KHÁCH HÀNG </p></td>
-  </tr>
-  <tr>
+<div id = "customer_detail">
+  <div class = "style1" style="width:100%;">CHI TIẾT KHÁCH HÀNG</div>
+  <div id="detail-left" style="width:65%;">
+	<div class="row"><span class="style3">Tên khách hàng: </span> </div>
+	
+  </div>
+  <div id="detail-right" style="width:35%; align:center; float:right;">
+	<? echo $rowCus['CusName']; ?>
+  </div>
+  
+  </div>
     <td width="25%" align="right"><span class="style3">Tên khách hàng: </span></td>
     <td width="40%" align="left"><div class="border1"><? echo $rowCus['CusName']; ?></div></td>
     <td width="35%" align="center"><span class="style3">Ảnh hiển thị:</span></td>
@@ -72,5 +78,5 @@
   <?
   }
   ?>
-</table>
+</div>
 <br /><br />

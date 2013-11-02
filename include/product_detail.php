@@ -11,7 +11,7 @@
 <table width="96%" border="0" align="center" cellpadding="5" cellspacing="0">
   <tr>
     <td width="55%" align="center">
-		<img style="border:1px solid #909090; padding:2px 2px;" src="pic-product/<? echo $row['ProImage'] ?>" />    </td>
+		<img width = 300px style="border:1px solid #909090; padding:2px 2px;" src="pic-product/<? echo $row['ProImage'] ?>" />    </td>
     <td width="45%" valign="top">
 		<span style="color:#ca1f6e; font-size:16px; font-weight:bold;"><? echo($row['ProName']);?></span><br />
 		<br />

@@ -132,14 +132,13 @@
 	<div id="footerpagelogin">
 		<table width="100%" border="0" align="center" cellspacing="0">
 		  <tr>
-			<td colspan="2" align="center"><p>Website bán bánh trực tuyến<br />
-				Thiết kế : Nhóm 2 - CĐ Tin5- ĐH BK Hà Nội
-			 </td>
+			<td colspan="2" align="center"><p style="font-size:16px; color:#666666">SACLAONGS<br />
+							 </td>
 		  </tr>
 		  <tr>
 		  	<td width="18%" style="font-size:14px">&nbsp;</td>
-		    <td width="82%" style="font-size:14px; color:#666666">Phone : 0982 269250<br>
-Email : duongnguyendesigner@gmail.com</td>
+		    <td width="82%" style="font-size:14px; color:#666666">Twitt @hungham2806<br>
+Email : hungham2806@batki1emailnao.com</td>
 		  </tr>
 		</table>
 

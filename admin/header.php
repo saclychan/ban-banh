@@ -13,7 +13,7 @@
 			<ul>
 				<li><a href="admin.php?go=admin_editinfo&action=edit">Sửa thông tin</a></li>
 				<li><a href="admin.php?go=admin_changepass">Đổi mật khẩu</a></li>
-				<li><a href="admin.php?go=admin_manager" id="quanlyuser">Quản lý User</a>/
+				<li><a href="admin.php?go=admin_manager" id="quanlyuser">Quản lý nhân viên</a>/
 					<a href="admin.php?go=chat_manager" id="quanlyuser">Chat</a>
 				</li>
 			</ul>

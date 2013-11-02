@@ -1,11 +1,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div class="defaul-new-content">
-	<div class="title-account"><span>Kính chào quý khách</span></div>
+	<div class="title-account"><span>SALLOGS!</span></div>
 	<div class="content-defaul-new-product">
 <table width="96%" border="0" align="center">
 	<tr>
 		<td colspan="4" align="center" class="titlename"><br />
-		Wellcome to BakeryShop
+		CHÀO MỪNG BẠN ĐẾN VỚI SACLAONGS!!!
 		  <hr /><br />
 		</td>	
 	</tr>
@@ -20,7 +20,7 @@
         
         <p>&nbsp;&nbsp;&nbsp;- Nếu bạn chọn hình thức Credit- Card: Bạn mua hàng và thực hiện việc thanh toán bằng cách chuyển số tiền mua hàng vào tài khoản ngân hàng của website . Nội dung chuyển khoản ghi rõ :</p><br />
         
-<p>    Thanh toán mua hàng tại Website Bakery Shop, người giao dịch : tên đăng ký của bạn tại website. !	</p>
+<p>    Thanh toán mua hàng tại Saclaongs, người giao dịch : tên đăng ký của bạn tại website. !	</p>
     <p>&nbsp;</p></td>
   </tr>
   <tr>
@@ -28,9 +28,9 @@
 	<p>&nbsp;</p>	</td>
     <td colspan="2"><em><p>Số tài khoản giao dịch </p>
       <p>Tại ngân hàng VietComBank :</p>
-      <p>Chủ tài khoản : Nguyễn Văn Long</p>
-      <p>Số TK : 0451001991287.</p>
-    <p>Hotline : 0165.6093.818</p></em>
+      <p>BOSS: Sacly</p>
+      <p>Số TK : xxx.</p>
+    <p>Hotline : 113</p></em>
     <p>&nbsp;</p></td>
   </tr>
   <tr>
@@ -41,7 +41,7 @@
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td width="50%"><span style="color:#FF0033; font-size:15px">--- BakeryShop ---</span></td>
+    <td width="50%"><span style="color:#FF0033; font-size:15px">--- SACLAONGS ---</span></td>
   </tr>
 </table>
 

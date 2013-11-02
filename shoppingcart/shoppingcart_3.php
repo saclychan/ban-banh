@@ -1,4 +1,16 @@
 <div class="defaul-new-content">
+<div style="margin: 1px; background:#053; color:#fff;">
+content.php:
+<pre style="font-family:Arial">
+<? 
+echo "Nội dung biến \$_REQUEST:<br>";
+print_r($_REQUEST);
+echo "<br> Nội dung biến \$_SESSION:<br>";
+print_r($_SESSION);
+print_r($test);
+?>
+</pre>
+</div>
 	<div class="title-account"><span>Mua hàng</span></div>
 	<div class="content-defaul-new-product">
 		<br /><br /><br /><div align="center" class="stylecl">Cám ơn quý khác đã mua hàng của chúng tôi, <br>

@@ -34,7 +34,7 @@
 					{
 				?>
 					<div class="box-lead-right">
-						<div class="a-img" onclick="location.href='index.php?go=news_detail&nid=<? echo $rowNews['NewsId']?>'"><img width="60" height="50" src="newspicture/<? echo $rowNews['NewsImage'] ?>"/></div>
+						<!--<div class="a-img" onclick="location.href='index.php?go=news_detail&nid=<!--? echo $rowNews['NewsId']?>'"><img width="60" height="50" src="newspicture/<!--? echo $rowNews['NewsImage'] ?>"/></div-->
 						<div class="a-link" onclick="location.href='index.php?go=news_detail&nid=<? echo $rowNews['NewsId']?>'"><? echo $rowNews['NewsTitle']; ?></div>
 					</div>
 						<span>-------------------------------</span>
@@ -56,7 +56,7 @@
 				{				
 			?>
 					<div class="box-lead-right">
-						<div class="a-img" onclick="location.href='index.php?go=leading_detail&lid=<? echo $rows['LeadID']?>'"><img width="60" height="50" src="leadingpicture/<? echo $rows['LeadImage'] ?>"/></div>
+						<!--div class="a-img" onclick="location.href='index.php?go=leading_detail&lid=<!--? echo $rows['LeadID']?>'"><img width="60" height="50" src="leadingpicture/<!--? echo $rows['LeadImage'] ?>"/></div-->
 						<div class="a-link" onclick="location.href='index.php?go=leading_detail&lid=<? echo $rows['LeadID']?>'"><? echo $rows['LeadName']; ?></div>
 					</div>
 						<span>-------------------------------</span>

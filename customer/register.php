@@ -29,7 +29,6 @@
 			$CusQues=$_REQUEST['CusQues'];
 			$CusAns=$_REQUEST['CusAns'];
 			$CusGender=$_REQUEST['CusGender'];
-			$RegDate=date("Y-m-d");
 		//check data	
 			
 		//-------
@@ -44,7 +43,7 @@
 			}
 		else
 			{
-				$sql_cus="insert into customer(RegDate,CusName,CusAdd,CusPhone,CusEmail,CusUser,CusPass,CusAns,CusQues,CusGender) values ('".$RegDate."','".$CusName."','".$CusAdd."','".$CusPhone."','".$CusEmail."','".$CusUser."','".$CusPass."','".$CusAns."','".$CusQues."','".$CusGender."')";
+				$sql_cus="insert into customer(CusName,CusAdd,CusPhone,CusEmail,CusUser,CusPass,CusAns,CusQues,CusGender) values ('".$CusName."','".$CusAdd."','".$CusPhone."','".$CusEmail."','".$CusUser."','".$CusPass."','".$CusAns."','".$CusQues."','".$CusGender."')";
 				if(mysql_query($sql_cus,$cnn))
 				{
 				echo("<script>alert('Đăng ký tài khoản mới thành công Bạn có thể sử dụng tài khoản đăng nhập vào website !')</script>");

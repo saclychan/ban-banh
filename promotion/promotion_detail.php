@@ -8,7 +8,7 @@
 
 <div class="defaul-new-content">
 	<div class="title-account"><span>Tin khuyến mãi</span></div>
-	<div class="content-defaul-new-product">
+	<div class="content-defaul-new-product-prom">
 			<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
 				<tr>
 				<td  class="tableheadmozleft">&nbsp;&nbsp;&nbsp;<a id="asingle" href="index.php?go=promotion_list"><span class="styletitle">TRANG NHẤT KHUYẾN MẠI </span></a></td>

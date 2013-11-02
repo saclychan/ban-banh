@@ -4,9 +4,9 @@
 <div id="login-logout2">
 	<div id="welcomecustomer">
 		<ul>
-			<li><span id="tiltec">Xin chào:</span></li>
-			<li><span id="informationc"><a href="index.php?go=account">&nbsp;<? echo $_SESSION['CusUser'];?></a></span></li> <!--Link đến tài khoản-->
-			<li><span id="control"><a href="index.php?go=control_customer">&nbsp;Bảng điều khiển</a></span></li> <!--Link đến những trang có comment-->
+			<li><span id="tiltec"></span></li>
+			<li><span id="informationc"><a href="index.php?go=account"><? echo $_SESSION['CusUser'];?></a></span></li> <!--Link đến tài khoản-->
+			<li><span id="control"><a href="index.php?go=control_customer">Bảng điều khiển</a></span></li> <!--Link đến những trang có comment-->
 		</ul>
 		
 	</div>

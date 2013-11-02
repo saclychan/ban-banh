@@ -1,5 +1,6 @@
 ﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<div id="footer-information">
+	
+		<div id="footer-information">
 		<H1><strong>SACLAONGS BAKERY</strong></H1>
 		<P>Designed by <i>unknown</P>
 		<br />
@@ -32,9 +33,9 @@
 			</li>
 		</ul>
 	</div>
-	<div id="logoaptech">
+	<div id="saclogo">
 	</div>
-	<div id="copyright" align="right">Copy right © 2013 Bakery's Shop </div>
+	<div id="copyright" align="right">Copy right © 2050 Saclaongs Bakery </div>
 </div>
 
 <div id="noname"></div>

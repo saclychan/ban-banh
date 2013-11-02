@@ -19,11 +19,12 @@
 		width:166.6px;
 	}
 	ul#nav a, ul#nav span{
+		font-weight: bold;
 		padding:10px 20px;
 		float: left;
 		clear:both;
-		color:#FFFFFF;
-		font-family:Arial, Helvetica, sans-serif;
+		color:#eabd42;
+		font-family:Comic Sans MS, Helvetica, sans-serif;
 		text-decoration:none;
 		line-height: 20px;
 		width:100%;
@@ -31,7 +32,7 @@
 		background: url(images/1.png) no-repeat top left;
 	}	
 	ul#nav a{
-		color:#FFFFFF;
+		color:#8d0e0e;
 		background-position: left bottom;
 	}
 	ul#nav span{

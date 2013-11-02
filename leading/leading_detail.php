@@ -6,12 +6,10 @@
 	$row=mysql_fetch_array($sql)
 ?>
 <div class="defaul-new-content">
-	<div class="title-account"><span>Mẹo vặt - Khéo tay</span></div>
-	<div class="content-defaul-new-product">
+	<div class="title-account-lead"><span>BÍ QUYẾT LÀM BÁNH</span></div>
+	<div class="content-defaul-new-products-lead">
 			<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
-			  <tr>
-				<td class="tableheadmozleft"><br />&nbsp;&nbsp;&nbsp;<a id="asingle" href="index.php?go=leading_list"><span class="styletitle">TRANG NHẤT HƯỚNG DẪN </span></a></td>
-			  </tr>
+			  
 			</table>
 			<div class="pagecontentcontent">
 			<table width="94%" border="0" align="center" cellpadding="5" cellspacing="0">
@@ -47,6 +45,6 @@
 			</table>
 			
 	</div>
-	<div class="bottom-default"></div>
+	<div class="bottom-default-lead"></div>
 </div>	
 

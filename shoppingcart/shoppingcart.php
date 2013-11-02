@@ -162,7 +162,7 @@ function ShoppingCartSend()
 			?>
 			<tr height="30" valign="middle" align="left">
 			<td align="center" colspan="7"><br /><br />
-			Giỏ hàng trống...<br /><br /></td>
+			<span class = "cartnote">Giỏ hàng trống...</span><br /><br /></td>
 			</tr>
 			<tr height="30" valign="middle" align="center">
 			<td align="center" colspan="7">

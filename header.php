@@ -13,17 +13,20 @@
 							<div id="search">
 								<ul>
 									<li>
+										<!--div  class="inputBox" id="searchBox"-->
 										<div  class="inputBox" id="searchBox">
+										<!--div  class="searchinputbox" id="searchBox"-->
 											<input type="text" name="txtSearch" id="txtSearch"  style="display: inline;" tabindex="102" onfocus="if(this.value=='search...') this.value='';" onblur="if(this.value=='') this.value='search...'"  alt="Search" value="<? echo $_REQUEST['txtSearch'];?>" />
 											
 										</div>
 									</li>
 									<li>
-										<input type="image" src="images/searchButton.png" title="Tìm kiếm tên sản phẩm" onclick="frm_product_list.submit()" />
+										<input class ="searchButton" type="image" src="images/searchButton.png" title="Tìm kiếm tên sản phẩm" onclick="frm_product_list.submit()" />
 									</li>
 								</ul>
 							</div>
 						</form>	
+						<!--input class ="searchButton" type="image" src="images/searchButton.png" title="Tìm kiếm tên sản phẩm" onclick="frm_product_list.submit()" /-->
 							<div id="login">
 								<? 
 									if(!isset($_SESSION["CusUser"] ))

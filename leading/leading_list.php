@@ -19,13 +19,10 @@
 	$self = $page;
 ?>
 	<div class="defaul-new-content">
-		<div class="title-account"><span>Mẹo vặt - Khéo tay</span></div>
-		<div class="content-defaul-new-product">
+		<div class="content-defaul-new-product-lead">
 
 				<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
-					<tr>
-					<td  class="tableheadmoz" ><br />&nbsp;&nbsp;&nbsp;<a id="asingle" href="index.php?go=leading_list"><span class="styletitle">TRANG NHẤT HƯỚNG DẪN </span></a></td>
-				  </tr>
+				
 				</table><br />
 				<table width="98%" border="0" align="center" cellpadding="5" cellspacing="0">
 						<?
@@ -87,6 +84,6 @@
 				</table>
 				<br /><br /><br />		
 		</div>
-		<div class="bottom-default"></div>
+		<div class="bottom-default-lead"></div>
 	</div>	
 
