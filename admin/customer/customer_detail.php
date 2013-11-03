@@ -1,48 +1,39 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../styleadmin.css" type="text/css" />
 <?
 	$action=$_REQUEST['action'];
 	$CusID=$_REQUEST['cid'];
 	if($action=='detail')
-		$sql=mysql_query("select CusName,CusAdd,CusPhone,CusEmail,CusGender,RegDate,TotalPurchase,CusUser,CusStatus,CusImage from customer where CusID = " . $CusID ,$cnn);
+		$sql=mysql_query("select * from customer where CusID = " . $CusID . "",$cnn);
 ?>
 <?
 	while($rowCus=mysql_fetch_array($sql)){
 ?>
 
-
-<div id = "customer_detail">
-  <div class = "style1" style="width:100%;">CHI TIẾT KHÁCH HÀNG</div>
-  <div id="detail-left" style="width:65%;">
-	<div class="row"><span class="style3">Tên khách hàng: </span> </div>
-	
-  </div>
-  <div id="detail-right" style="width:35%; align:center; float:right;">
-	<? echo $rowCus['CusName']; ?>
-  </div>
-  
-  </div>
-    <td width="25%" align="right"><span class="style3">Tên khách hàng: </span></td>
-    <td width="40%" align="left"><div class="border1"><? echo $rowCus['CusName']; ?></div></td>
-    <td width="35%" align="center"><span class="style3">Ảnh hiển thị:</span></td>
+<div width="100%" style="overflow:auto;">
+<table width="60%" border="0" cellpadding="8" cellspacing="0" style="float:left;">
+  <tr>
+    <td colspan="3" align="right"><p class="style1" align="center">CHI TIẾT KHÁCH HÀNG </p></td>
   </tr>
   <tr>
-    <td width="25%" height="50" align="right" valign="top"><span class="style3">Địa chỉ:</span></td>
-    <td width="40%" align="left" valign="top"><? echo $rowCus['CusAdd']; ?> </td>
-    <td width="35%" rowspan="7" align="center" valign="top">
-		<img class="borderyes" src="../customer-avartar/<? echo $rowCus['CusImage'] ?>"/>	</td>
+    <td width="180px" align="right"><span class="style3">Tên khách hàng: </span></td>
+    <td align="left"><div class="border1"><? echo $rowCus['CusName']; ?></div></td>
   </tr>
   <tr>
-    <td width="25%" align="right" valign="top"><span class="style3">Email: </span></td>
-    <td width="40%" align="left" valign="top"><? echo $rowCus['CusEmail']; ?></td>
+    <td width="180px" align="right" valign="top"><span class="style3">Địa chỉ:</span></td>
+    <td align="left" valign="top"><? echo $rowCus['CusAdd']; ?> </td>
   </tr>
   <tr>
-    <td width="25%" align="right"><span class="style3">Số điện thoại:</span></td>
-    <td width="40%" align="left"><? echo $rowCus['CusPhone']; ?></td>
+    <td width="180px" align="right" valign="top"><span class="style3">Email: </span></td>
+    <td align="left" valign="top"><? echo $rowCus['CusEmail']; ?></td>
   </tr>
   <tr>
-    <td width="25%" align="right"><span class="style3">Giới tính:</span></td>
-    <td width="40%" align="left">
+    <td width="180px" align="right"><span class="style3">Số điện thoại:</span></td>
+    <td align="left"><? echo $rowCus['CusPhone']; ?></td>
+  </tr>
+  <tr>
+    <td width="180px" align="right"><span class="style3">Giới tính:</span></td>
+    <td align="left">
       <?
 			if($rowCus['CusGender']==1){
 			echo("Nam");
@@ -53,16 +44,17 @@
     </td>
   </tr>
   <tr>
-    <td align="right"><span class="style3">Tên đăng nhập:</span></td>
-    <td width="40%" align="left"><? echo $rowCus['CusUser']; ?></td>
+    <td width="180px" align="right"><span class="style3">Tên đăng nhập:</span></td>
+    <td align="left"><? echo $rowCus['CusUser']; ?></td>
   </tr>
   <tr>
-    <td width="25%" align="right"><span class="style3">Mật khẩu: </span></td>
-    <td width="40%" align="left"><? echo $rowCus['CusPass']; ?></td>
+    <td width="180px" align="right"><span class="style3">Ngày đăng ký: </span></td>
+    <td align="left"><? echo strrev($rowCus['RegDate']); ?>
+	</td>
   </tr>
   <tr>
-    <td width="25%" align="right"><span class="style3">Trạng thái : </span></td>
-    <td width="40%" align="left">
+    <td width="180px" align="right"><span class="style3">Trạng thái : </span></td>
+    <td align="left">
 		<?
 			if($rowCus['CusStatus']==1){
 			echo("Được sử dụng");
@@ -72,11 +64,51 @@
 		?>	</td>
   </tr>
   <tr>
-    <td height="100" colspan="3" align="center" valign="top"><br />
-		<input class="buttonbutton" type="button" name="button" value="Trở lại danh sách khách hàng" onclick="window.location='admin.php?go=customer_list&sid=2'" /></td>
+    <td width="180px" align="right"><span class="style3">Điểm tích luỹ: </span></td>
+    <td align="left"><? echo $rowCus['TotalPurchase']; ?></td>
   </tr>
-  <?
-  }
-  ?>
+</table>
+<img style="position:relative;left:50px;top:50px;" class="borderyes" src="../customer-avartar/<? echo $rowCus['CusImage'] ?>"/>
 </div>
-<br /><br />
+<p style="text-align:center;font-weight:bold;margin:10px;">Lịch sử mua hàng:</p>
+<table border="1" style="margin-left:auto;margin-right:auto;text-align:center;">
+	<tr>
+		<th style="padding: 5px;">Mã hoá đơn</th>
+		<th style="padding: 5px;">Ngày đặt hàng</th>
+		<th style="padding: 5px;">Ngày chuyển hàng</th>
+		<th style="padding: 5px;">Hình thức thanh toán</th>
+		<th style="padding: 5px;">Tổng giá trị</th>
+	</tr>
+	<?
+		// Get corresponding orders
+		$orders = mysql_query("SELECT * FROM orders WHERE CusID = ".$CusID."");
+		while($order = mysql_fetch_array($orders)){
+		// Get total price, reprocess dates
+		$princesses = mysql_query("SELECT OdPrice FROM orderdetail WHERE OrdID = ".$order['OrdID']."");
+		$totalprincess = 0;
+		while($princess = mysql_fetch_array($princesses))
+		{
+			$totalprincess += $princess[0];
+		}
+		$order['Date'] = date("d-m-Y",strtotime($order['Date']));
+		$order['OrdShipDate'] = date("d-m-Y",strtotime($order['OrdShipDate']));
+	?>
+	<tr>
+		<td><? echo $order['OrdID']; ?></td>
+		<td><? echo $order['Date']; ?></td>
+		<td><? echo $order['OrdShipDate']; ?></td>
+		<td><?
+				if($order['PayID'] === "1") echo "Tiền mặt";
+				else echo "Thẻ tin dụng";
+			?>
+		</td>
+		<td style="text-align:right;padding-right:10px;"><? echo $totalprincess; ?></td>
+	</tr>
+<?
+}
+?>
+</table>
+<input style="display:block; margin: 50px auto 0 auto;" class="buttonbutton" type="button" name="button" value="Trở lại danh sách khách hàng" onclick="window.location='admin.php?go=customer_list&sid=2'" />
+<?
+}
+?>
