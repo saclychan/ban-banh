@@ -81,11 +81,13 @@
 	</tr>
 	<?
 		// Get corresponding orders
+		$cuoinguaxemhoa=1;
 		$orders = mysql_query("SELECT * FROM orders WHERE CusID = ".$CusID."");
 		while($order = mysql_fetch_array($orders)){
 		// Get total price, reprocess dates
 		$princesses = mysql_query("SELECT OdPrice FROM orderdetail WHERE OrdID = ".$order['OrdID']."");
 		$totalprincess = 0;
+		$cuoinguaxemhoa=0;
 		while($princess = mysql_fetch_array($princesses))
 		{
 			$totalprincess += $princess[0];
@@ -108,6 +110,7 @@
 }
 ?>
 </table>
+<? if($cuoinguaxemhoa) echo"<div style=\"width:100%;text-align:center;\"><br>Khách hàng này chỉ cưỡi ngựa xem hoa, chưa mua gì.</div>"; ?>
 <input style="display:block; margin: 50px auto 0 auto;" class="buttonbutton" type="button" name="button" value="Trở lại danh sách khách hàng" onclick="window.location='admin.php?go=customer_list&sid=2'" />
 <?
 }
