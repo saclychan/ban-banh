@@ -20,12 +20,10 @@
 ?>
 
 <div class="defaul-new-content">
-	<div class="title-account"><span>Tin tức</span></div>
-	<div class="content-defaul-new-product">
+	<div class="title-news"></div>
+	<div class="content-news">
 			<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
-				<tr>
-				<td  class="tableheadmoz">&nbsp;&nbsp;&nbsp;<a id="asingle" href="index.php?go=news_list"><span class="styletitle">TRANG NHẤT TIN TỨC</span></a></td>
-			  </tr>
+				
 			</table><br /><br />
 			<table width="98%" border="0" align="center" cellpadding="5" cellspacing="0">
 						<?

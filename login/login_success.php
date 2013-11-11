@@ -28,7 +28,7 @@
 				<td align="center"><img src="images/loading.gif" width="196" height="166" /></td>
 			  </tr>
 			  <tr>
-				<td align="center" ><hr />Chào mừng bạn đến với BakeyShop <br />
+				<td align="center" ><hr />Chào mừng bạn đến với Saclaongs!! <br />
 				Vui lòng chờ... <br />
 				Nếu bạn không muốn chờ lâu hãy<a href="index.php"> Click vào đây ! </a>    </td>
 			  </tr>

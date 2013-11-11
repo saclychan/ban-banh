@@ -131,7 +131,6 @@
 			 }else if($row_order['OrdStatus']==0){
 			?>
 			<option value="0">Đã xử lý</option>
-			<option value="1">Chưa xử lý</option>
 			<?
 			}
 			?>

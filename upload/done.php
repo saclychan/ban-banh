@@ -3,7 +3,7 @@
 if(isset($_POST['ok_upload']))
 {
  $num=$_GET['file'];
- $cnn=mysql_connect("localhost","root","1234567") or die("can't connect your database");
+ $cnn=mysql_connect("localhost","root","") or die("can't connect your database");
  mysql_select_db("images",$cnn);
  for($i=0; $i< $num; $i++)
  {

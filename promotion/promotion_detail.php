@@ -7,17 +7,15 @@
 ?>
 
 <div class="defaul-new-content">
-	<div class="title-account"><span>Tin khuyến mãi</span></div>
-	<div class="content-defaul-new-product-prom">
+	<div class="title-promo"></div>
+	<div class="content-defaul-new-product-promo">
 			<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
-				<tr>
-				<td  class="tableheadmozleft">&nbsp;&nbsp;&nbsp;<a id="asingle" href="index.php?go=promotion_list"><span class="styletitle">TRANG NHẤT KHUYẾN MẠI </span></a></td>
-			  </tr>
+				
 			</table>
 			<div class="pagecontentcontent">
 			<table width="94%" border="0" align="center" cellpadding="5" cellspacing="0">
 			  <tr>
-				<td colspan="2" align="center"><br /><span style="color:#ca1f6e; font-size:20px; font-weight:bold;"><? echo($row['PromoTitle']);?></span></td>
+				<td colspan="2" align="center"><br /><span style="color:#ca1f6e; font-size:30px; font-weight:bold;"><? echo($row['PromoTitle']);?></span></td>
 			  </tr>
 			  <tr>
 				<td colspan="2">&nbsp;</td>

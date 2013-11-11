@@ -22,9 +22,9 @@
 	$self = $page;
 ?>
 
-<div class="defaul-new-content">
-	<div class="title-account"><span>Tin khuyến mãi</span></div>
-	<div class="content-defaul-new-product-prom">
+<div class="defaul-new-content-promo">
+	<div class="title-promo"></div>
+	<div class="content-defaul-new-product-promo">
 		<br />
 		<table width="98%" border="0" align="center" cellpadding="5" cellspacing="0">
 					<?

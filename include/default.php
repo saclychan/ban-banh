@@ -65,7 +65,7 @@
 </div>
 
 <div class="defaul-new-content">
-	<div class="title-account"><span>Tin khuyến mãi</span></div>
+	<div class="title-defaul-promo"></div>
 	<div class="content-defaul-new-product">
 	
 	   <?

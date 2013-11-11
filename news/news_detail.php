@@ -6,21 +6,19 @@
 	$row=mysql_fetch_array($sql)
 ?>
 <div class="defaul-new-content">
-	<div class="title-account"><span>Tin tức</span></div>
-	<div class="content-defaul-new-product">
+	<div class="title-news"></div>
+	<div class="content-news">
 
 		<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
-			<tr>
-			<td class="tableheadmoz">&nbsp;&nbsp;&nbsp;<a id="asingle" href="index.php?go=news_list"><span class="styletitle">TRANG NHẤT TIN TỨC</span></a></td>
-		  </tr>
+			
 		</table>
-		<div class="pagecontentcontent">
+		<div >
 		<table width="94%" border="0" align="center" cellpadding="5" cellspacing="0">
 		  <tr>
 			<td colspan="2" align="right" style="color:#999999; font-size:11px;"><strong>Ngày đăng tin:</strong> <em><? echo($row['NewsDate']);?></em></td>
 		  </tr>
 		  <tr>
-		    <td colspan="2" align="center"><span style="color:#ca1f6e; font-size:20px; font-weight:bold;"><? echo($row['NewsTitle']);?></span></td>
+		    <td colspan="2" align="center"><span style="font-size:30px; font-weight:bold;"><? echo($row['NewsTitle']);?></span></td>
 	      </tr>
 		  <tr>
 			<td colspan="2">&nbsp;</td>

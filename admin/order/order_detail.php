@@ -73,7 +73,6 @@
 							 }else if($rowOrd['OrdStatus']==0){
 							?>
 							<option value="0">Đã xử lý</option>
-							<option value="1">Chưa xử lý</option>
 							<?
 							}
 							?>
@@ -169,16 +168,12 @@
 <?php
 $i=0;
 $totalmoney=0.0;
-$sql=mysql_query("SELECT * FROM orders,orderdetail,customer,payment WHERE orders.OrdID=orderdetail.OrdID and orders.CusID=customer.CusID and orders.PayID=payment.PayID and orders.OrdID=".$OrdID,$cnn);
+$sql=mysql_query("SELECT * FROM orders,orderdetail,customer,payment,product WHERE orders.OrdID=orderdetail.OrdID and orders.CusID=customer.CusID and orders.PayID=payment.PayID and orderdetail.ProID=product.ProID and orders.OrdID=".$OrdID,$cnn);
 while($row=mysql_fetch_array($sql))
 	{
 		$i++;
 		$totalmoney+=$row['OdPrice']*$row['OdQty'];
 		$a= ($row['OdPrice']*$row['OdQty']);
-		$princessname = mysql_query("SELECT ProName FROM product WHERE ProID = ".$row['ProID']);
-		$princessname= mysql_fetch_array($princessname);
-		$row['ProName'] = $princessname[0];
-		if($row['ProName'] == "") $row['ProName'] = "- - -";
 ?>			  
 						
 			  <tr onmouseover="this.className='over'" onmouseout="this.className='out'">

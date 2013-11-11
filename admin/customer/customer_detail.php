@@ -84,7 +84,7 @@
 		$cuoinguaxemhoa=1;
 		$orders = mysql_query("SELECT * FROM orders WHERE CusID = ".$CusID."");
 		while($order = mysql_fetch_array($orders)){
-		// Get total price, reprocess dates and payment
+		// Get total price, reprocess dates
 		$princesses = mysql_query("SELECT OdPrice FROM orderdetail WHERE OrdID = ".$order['OrdID']."");
 		$totalprincess = 0;
 		$cuoinguaxemhoa=0;
@@ -94,15 +94,16 @@
 		}
 		$order['Date'] = date("d-m-Y",strtotime($order['Date']));
 		$order['OrdShipDate'] = date("d-m-Y",strtotime($order['OrdShipDate']));
-		$princesspay = mysql_query("SELECT PayType FROM payment WHERE PayID = ".$order['PayID']."");
-		$princesspay = mysql_fetch_array($princesspay);
-		$order['PayID'] = $princesspay[0];
 	?>
 	<tr>
 		<td><? echo $order['OrdID']; ?></td>
 		<td><? echo $order['Date']; ?></td>
 		<td><? echo $order['OrdShipDate']; ?></td>
-		<td><? echo $order['PayID']; ?></td>
+		<td><?
+				if($order['PayID'] === "1") echo "Tiền mặt";
+				else echo "Thẻ tin dụng";
+			?>
+		</td>
 		<td style="text-align:right;padding-right:10px;"><? echo $totalprincess; ?></td>
 	</tr>
 <?
