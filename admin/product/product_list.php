@@ -180,25 +180,8 @@
 			 ?>
 	  </select>    </td>
 		<td width="5%" align="center"><a href="admin.php?go=product_edit&action=edit&pid=<? echo $rowPro['ProID']; ?>" >Sửa</a></td>
-		<td width="5%" align="center">
-					<?
-					$sql_check="Select * from orderdetail where ProID=".$rowPro['ProID'];
-					$re_check=mysql_query($sql_check,$cnn);
-					$ok=0;
-					while($row_check=mysql_fetch_array($re_check))
-					{
-						$ok=1;
-					}
-					if($ok==1)
-					{
-						echo("||||");
-					}
-					else{
-				  ?>
+		<td width="5%" align="center">					
 			<a href="admin.php?go=product_list&action=del&pid=<? echo $rowPro['ProID'] ?>" onClick="if(confirm('Bạn có muốn xóa sản phẩm này không?')) return true; else return false;">Xóa</a>
-					<? 
-						}
-					?>
 		</td>
   </tr>
   <tr>
