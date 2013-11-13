@@ -6,8 +6,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, font, 
 	font-size:100%;
 }
 body{
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size:75%;
+	//font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: "Font Shit", Arial, Helvetica, sans-serif;
+	font-size:15px;
 	line-height: 1.5em;
 	background:url(../images/bgbody.png) repeat;
 	z-index:-1000;
@@ -35,6 +36,14 @@ a img{
 	font-family: "Font Product";
 	src: url(UVNMoiHong.TTF) format("truetype");
 }
+
+@font-face {
+	font-family: "Font Shit";
+	src: url(aachenb.ttf) format("truetype");
+}
+
+
+
 /*END RESET*/
 
 /* MAIN SETTING */
@@ -50,15 +59,17 @@ a img{
 	}
 	
 #logo{
-	width: 270px;
-	height: 240px;
+	width: 195px;
+	height: 210px;
 	margin-left:0px;
+	//margin: 90px 90px;
 	position:absolute;
 	}
 #logo #logoIcon{
-	width: 195px;
+	width: 560px;
 	height: 210px;
-	margin: 90px 90px;
+	//margin-left:10px;
+	margin: 80px 20px;
 	background: url(../images/logo.png) no-repeat;
 }
 
@@ -74,7 +85,7 @@ a img{
 	height: 55px;
 	width: 680px;
 	position:absolute;
-	margin: 5px 10px;
+	margin: -10px -10px;
 	}
 	
 #headerMainright #searchlogin li{
@@ -99,12 +110,13 @@ a img{
     font-size: 13px;
     height: 15px;
     width: 135px;
-	margin: 0px 1px;
+	margin: -0px 1px;
 }
 #headerMainright #searchlogin #search{
 	height: 55px;
 	width: 196px;
-	position:absolute;
+	//position:absolute;
+	margin: -50px 30px;
 	background:url(../images/search.png) no-repeat;
 	}
 
@@ -113,7 +125,7 @@ a img{
 	width: 466px;
 	position:absolute;
 	background: url(../images/login.png) no-repeat;
-	margin: 0px 214px;
+	margin: -5px 350px;
 }
 #headerMainright #searchlogin #login #usernameBox{
 	margin: 3px 40px;
@@ -130,13 +142,14 @@ a img{
 #headerMainright #searchlogin #login #login-logout1 #loginButton{
 	height: 36px;
 	width: 100px;
-	margin: 9px 340px;
+	margin: 70px 120px;
 	position:absolute;
 }
 #headerMainright #searchlogin #login #login-logout2{
 	height: 55px;
 	width: 466px;
 	position:absolute;
+	//margin:10px 20px
 	background: url(../images/logout.png) no-repeat;
 }
 
@@ -144,7 +157,7 @@ a img{
 	float:left;
 	font-size:12px;
 	font-weight:bold;
-	margin-left:10px;
+	margin:0px 40px;
 }
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #informationc a{
 	font-size:12px;
@@ -152,12 +165,12 @@ a img{
 	font-style:italic;
 	display: block;
 	height25px;
-	width:110%;
-	color: #FF0099;
+	width:140%;
+	color: #000000;
 }
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #informationc a:hover{
-	background: #35C8FF;
-	color: #FFFFFF;
+	//background: #FFFFFF;
+	color: #512c2b;
 	-moz-border-radius: 5px 5px 5px 5px;
 }
 
@@ -170,15 +183,15 @@ a img{
 	color: #0000CC;
 }
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #control a:hover{
-	-moz-border-radius: 5px 5px 5px 5px;
-	background: #35C8FF;
+	//-moz-border-radius: 5px 5px 5px 5px;
+	ssbackground: #35C8FF;
 	color: #FFFFFF;
 }
 
 #headerMainright #searchlogin #login #login-logout2 #logoutButton{
 	height: 36px;
 	width: 100px;
-	margin: 9px 340px;
+	margin: 100px 120px;
 	position:absolute;
 }
 
@@ -196,12 +209,12 @@ a img{
 	width: 1000px;
 	margin: 0 auto;  /*Can chinh toan trang nam giua*/
 }
-#main{
+/*#main{
 	width:1000px;
 	background:url(../images/bg-content.png) repeat-y;
 	margin-top: 20px;
 	float:left;
-}
+}*/
 #bottom-main{
 	width:1000px;
 	height:3px;
@@ -365,7 +378,7 @@ cursor:pointer;
 	padding:0px 7px;
 }
 #rightMain-center-content span{
-	 color:#CCCCCC;
+	 color:#cccccc;
 	 display:block;
 	 width:190px;
 	 text-align:center;
@@ -390,7 +403,8 @@ cursor:pointer;
 }
 
 #rightMain-center-content .box-lead-right .a-link{
-	color:#dd006d;
+	color:#000000;
+	font-family: Courier New, Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	width:115px;
 	float:left;
@@ -720,12 +734,13 @@ height:25px;
 	margin:3px 3px;
 }
 .name-product{
-	width:196px;
+	width:180px;
 	display:block;
 	height:25px;
 	color:#dd006d;
-	font-weight:bold;
-	font-size:13px;
+	font-weight: bold;
+	//font-family: "Font Product", Arial, Helvetica, sans-serif;
+	font-size:15px;
 	text-align:center;
 	float:left;
 	margin-top:5px;
