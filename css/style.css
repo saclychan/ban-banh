@@ -34,7 +34,7 @@ a img{
 
 @font-face {
 	font-family: "Font Product";
-	src: url(UVNMoiHong.TTF) format("truetype");
+	src: url(Colored Crayons.ttf) format("truetype");
 }
 
 @font-face {
@@ -87,7 +87,7 @@ a img{
 	position:absolute;
 	margin: -10px -10px;
 	}
-	
+
 #headerMainright #searchlogin li{
 	list-style: none outside none;
 	float:left;
@@ -95,6 +95,8 @@ a img{
     line-height: 22px;
     margin: 17px 2px;
 }	
+
+
 #headerMainright #searchlogin  .inputBox{
     border: medium none;
     color: #333333;
@@ -112,6 +114,27 @@ a img{
     width: 135px;
 	margin: -0px 1px;
 }
+
+/*.searchinputbox{
+    border: medium none;
+    color: #333333;
+    font-size: 12px;
+    height: 15px;
+    //padding: 3px 2 2px 3px;
+    width: 235px;
+	margin:1px 1px;
+}
+
+#headerMainright #searchlogin .searchinputbox input{
+    border: medium none;
+    color: red;
+    font-size: 13px;
+    height: 15px;
+    width: 235px;
+	margin: -10px 0px;
+}
+*/
+
 #headerMainright #searchlogin #search{
 	height: 55px;
 	width: 196px;
@@ -160,32 +183,36 @@ a img{
 	margin:0px 40px;
 }
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #informationc a{
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
 	font-style:italic;
 	display: block;
 	height25px;
 	width:140%;
 	color: #000000;
+	margin: 16px 10px;
 }
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #informationc a:hover{
 	//background: #FFFFFF;
-	color: #512c2b;
+	color: #c92038;
 	-moz-border-radius: 5px 5px 5px 5px;
+	margin: 16px 10px;
 }
 
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #control a{
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
 	display: block;
 	height25px;
 	width:110%;
 	color: #0000CC;
+	margin: 16px 0px;
 }
 #headerMainright #searchlogin #login #login-logout2 #welcomecustomer ul li #control a:hover{
 	//-moz-border-radius: 5px 5px 5px 5px;
 	ssbackground: #35C8FF;
 	color: #FFFFFF;
+	margin: 16px 0px;
 }
 
 #headerMainright #searchlogin #login #login-logout2 #logoutButton{
@@ -535,11 +562,18 @@ cursor:pointer;
 	height:20px;
 	width:200px;
 	border: 1px solid threedshadow;
+	font
     -moz-border-radius: 5px 5px 5px 5px;
 }
 .titlename{
 	font-size:18px;
-	color: #000066;
+	color: #941322;
+	font-family: "Font Shit", Arial, Helvetica, sans-serif;
+}
+.cartnote{
+	font-size:14px;
+	font-family: "Font Shit", Arial, Helvetica, sans-serif;
+	color: #ffffff;
 }
 hr{
 width:80%;
@@ -825,4 +859,17 @@ height:25px;
 	display:block;
 	margin:0 auto;
 	color:#666666;
+}
+
+
+
+/*#headerMainright  .searchutton {
+	margin: 100px -12px;
+}*/
+.form-mua-hang{
+margin: 3px 31px;
+}
+
+ ul#nav a {
+color:red;
 }
