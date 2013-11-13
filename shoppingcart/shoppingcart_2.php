@@ -30,6 +30,7 @@ Redirect('index.php?go=shoppingcart_login');
 		$OrdID = $row['OrdID'];
 	}
 	//Insert into Order Detail
+	$totalprincess = 0;
 	foreach(array_keys($cart) as $value)
 	{
 		//Select ProPrice 
@@ -39,11 +40,11 @@ Redirect('index.php?go=shoppingcart_login');
 		{
 			$ProPrice = $row["ProPrice"];
 		}
+		$totalprincess += $ProPrice * GetQuantity($value);
 
 		//Insert into order detail
 		$sql = "INSERT INTO orderdetail(OrdID,ProID,OdQty,OdPrice) VALUES('".$OrdID."','".$value."',".GetQuantity($value).",'".$ProPrice."')";
 		mysql_query($sql,$cnn);
-		
 		$sql2 = "select * from product where ProID = '".$value."'";
 		$res = mysql_query($sql2);
 		$rows= mysql_fetch_array($res);
@@ -52,10 +53,19 @@ Redirect('index.php?go=shoppingcart_login');
 		$sql3=  "update product set ProQty = '".$flag."' where ProID =".$value;
 		mysql_query($sql3,$cnn);
 	}
+	//Update Customer TotalPurchase
+		$sql = "SELECT TotalPurchase FROM customer WHERE CusID = '".$CusID."'";
+		$original = mysql_query($sql);
+		$rows1 = mysql_fetch_array($original); 
+		$originalprincess = $rows1[0];
+		$totalprincess += $originalprincess;
+		//$test = $originalprincess;
+		$sql = "UPDATE customer SET TotalPurchase = '".$totalprincess."' WHERE (CusID = '".$CusID."')";
+		mysql_query($sql);
 				
 }
 
 //Xoa shopping cart
 	$_SESSION["CART"] = "";
-	Redirect('index.php?go=shoppingcart_3');
+	Redirect("index.php?go=shoppingcart_3&test='".$test."'");
 ?>

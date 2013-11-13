@@ -7,15 +7,15 @@
 	margin:4px 6px;
 }
 #leftMain-menubar-content tr{
-	color: #000000;
+	color: #EF0A6B;
 	font-size:16px;
 	background:url(images/leftmenu.png) left bottom no-repeat;
 	font-weight:600;
 	cursor:pointer;
 }
 #leftMain-menubar-content tr:hover{
-	font-size:20px;
-	//color: #FFFFFF;
+	font-size:16px;
+	color: #FFFFFF;
 	background:url(images/leftmenu.png) left top no-repeat;
 	font-weight:600;
 }
